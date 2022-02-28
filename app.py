@@ -11,6 +11,7 @@ BALL_RADIUS = 7
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
+GREEN = (19, 58, 38)
 
 
 PADDLE_WIDTH = 20
@@ -80,7 +81,7 @@ def handle_movement_paddle(keys, left_paddle, right_paddle) -> None:
 
 
 def draw(win, paddles, ball) -> None:
-    win.fill(BLACK)
+    win.fill(GREEN)
 
     for paddle in paddles:
         paddle.draw(win)
@@ -118,6 +119,7 @@ def main() -> None:
 
         keys = py.key.get_pressed()
         handle_movement_paddle(keys, left_paddle, right_paddle)
+        ball.move()
 
     py.quit()
 
