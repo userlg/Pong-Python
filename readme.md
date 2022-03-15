@@ -34,7 +34,7 @@
 
 # Screenshots 
 
-[Capture 1](img/pong1.png)
+[Capture 1][(img/pong1.png)]
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 [Capture 2](img/pong2.png)
