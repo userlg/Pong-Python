@@ -13,7 +13,7 @@ BALL_RADIUS = 7
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 GREEN = (19, 58, 38)
-
+#Pythoj
 
 PADDLE_WIDTH = 20
 PADDLE_HEIGHT = 100
@@ -26,6 +26,21 @@ yellow = co.Fore.YELLOW
 red = co.Fore.RED
 blue = co.Fore.BLUE
 green = co.Fore.GREEN
+
+def handle_collision(ball, right_paddle,left_paddle) -> None:
+    if ball.y + ball.radius >= HEIGHT:
+        ball.y_vel *= -1
+    elif ball.y - ball.radius <= 0:
+        ball.y_vel *= -1
+    
+    if ball.x_vel < 0:
+        if ball.y >= left_paddle.y and ball.y <= left_paddle.y + left_paddle.height:
+            if ball.x - ball.radius <= left_paddle.x + left_paddle.width:
+                ball.x_vel *= -1
+    else:
+        if ball.y >= right_paddle.y and ball.y <= right_paddle.y + right_paddle.height:
+            if ball.x + ball.radius >= right_paddle.x:
+               ball.x_vel *= -1
 
 
 
@@ -80,6 +95,7 @@ def main() -> None:
         keys = py.key.get_pressed()
         handle_movement_paddle(keys, left_paddle, right_paddle)
         ball.move()
+        handle_collision(ball, right_paddle, left_paddle)
 
     py.quit()
 
