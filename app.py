@@ -1,5 +1,6 @@
 import pygame as py
 import colorama as co
+from components import Ball, Paddle
 
 py.init()
 co.init()
@@ -26,46 +27,6 @@ red = co.Fore.RED
 blue = co.Fore.BLUE
 green = co.Fore.GREEN
 
-
-class Ball:
-    COLOR = WHITE
-    MAX_VEL = 5
-
-    def __init__(self, x, y, radius) -> None:
-        self.x = x
-        self.y = y
-        self.radius = radius
-        self.x_vel = self.MAX_VEL
-        self.y_vel = 0
-
-    def draw(self, win) -> None:
-        py.draw.circle(win, self.COLOR,  ( self.x, self.y ),self.radius)
-
-    def move(self) -> None:
-        self.x  += self.x_vel
-        self.y += self.y_vel
-
-
-
-class Paddle:
-    COLOR = WHITE
-    VEL = 4
-
-    def __init__(self, x, y, width, height) -> None:
-        self.x = x
-        self.y = y
-        self.width = width
-        self.height = height
-
-    def draw(self, win) -> None:
-        py.draw.rect(win, self.COLOR,
-                     (self.x, self.y, self.width, self.height))
-
-    def move(self, up=True) -> None:
-        if up:
-            self.y -= self.VEL
-        else:
-            self.y += self.VEL
 
 
 def handle_movement_paddle(keys, left_paddle, right_paddle) -> None:
@@ -104,7 +65,6 @@ def main() -> None:
                          2, PADDLE_WIDTH, PADDLE_HEIGHT)
     right_paddle = Paddle(WIDTH - 10 - PADDLE_WIDTH, HEIGHT //
                           2 - PADDLE_HEIGHT // 2, PADDLE_WIDTH, PADDLE_HEIGHT)
-
 
     ball = Ball(WIDTH // 2, HEIGHT // 2, BALL_RADIUS)
 
