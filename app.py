@@ -23,6 +23,7 @@ PADDLE_WIDTH = 20
 PADDLE_HEIGHT = 100
 
 WIN = py.display.set_mode((WIDTH, HEIGHT))
+
 py.display.set_caption("PONG--GAME")
 
 white = co.Fore.WHITE
