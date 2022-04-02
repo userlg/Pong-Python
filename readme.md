@@ -1,10 +1,11 @@
 # Pong Project in Python
+-----
 
 ## This application is about the popular game pong. Using differents class to represent the ball, the paddles and the background screen.
 
-## Created by Userlg developer
+### **Created by Userlg developer**
 
-# Requires
+# Requirements
 
 + Knowledge about class and objects
 
