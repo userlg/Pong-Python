@@ -3,7 +3,11 @@
 
 ## This application is about the popular game pong. Using differents class to represent the ball, the paddles and the background screen.
 
+---------------------------------
+
 ### **Created by Userlg developer**
+
+------------------------------------------------
 
 # Requirements
 
@@ -18,6 +22,7 @@
 + Colorama
 
 #  Controls and Settings by default
+---------------------------------------------
 
 + Player 1 --> W to Up and S to Down
 
@@ -34,6 +39,7 @@
 
 
 # Screenshots 
+--------------------------------------------------
 
 ![Capture 1](img/pong1.png)
 
