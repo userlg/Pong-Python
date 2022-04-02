@@ -6,7 +6,7 @@
 
 # Requires
 
-+Knowledge about class and objects
++ Knowledge about class and objects
 
 + Python 3.10
 
@@ -16,7 +16,7 @@
 
 + Colorama
 
-# Controls and Settings by default
+#  Controls and Settings by default
 
 + Player 1 --> W to Up and S to Down
 
@@ -36,10 +36,10 @@
 
 ![Capture 1](img/pong1.png)
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-------------------------------------------------
 ![Capture 2](img/pong2.png)
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+--------------------------------------------------
 ![Capture 3](img/pong3.png)
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+----------------------------
