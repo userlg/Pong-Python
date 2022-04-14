@@ -50,3 +50,16 @@
 ![Capture 3](img/pong3.png)
 
 ----------------------------
+
+# Dockerfile 
++ Build the Image
+
+```
+ docker build -t projectname .
+```
+
++ Run the container
+
+```
+docker run -it projectname
+```
